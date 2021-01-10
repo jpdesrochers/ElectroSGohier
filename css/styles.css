@@ -1,0 +1,93 @@
+body {
+  font-family: "Montserrat";
+}
+
+/* Top section */
+#top-section {
+  background-color: #0f4c75;
+  color: white;
+}
+
+/* Navigation bar */
+.navbar {
+  padding: 0.25rem 0 0.5rem;
+}
+
+.navbar-brand {
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: "Ubuntu";
+}
+
+.title-icon {
+  padding: 20px;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat-light";
+}
+
+/* Carousel */
+#title-carousel {
+  text-align: center;
+  background-color: #3282b8;
+  padding: 3%;
+  margin: auto;
+}
+
+.carousel-column {
+  margin: 3%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#service-authorises {
+  background-color: white;
+  margin: 3%;
+  text-align: center;
+}
+
+h3 {
+  font-size: 2.5rem;
+  color: #3282b8;
+  text-align: center;
+  font-weight: 500;
+  position: relative;
+  margin-bottom: 5%;
+}
+
+
+.logo-col {
+padding: 3%;
+}
+
+.service-logo {
+  width: 60%;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#appareils-marques {
+  background-color: #0f4c75;
+  color: white;
+}
+
+#territoire {}
+
+#contact {
+  background-color: #3282b8;
+  color: white;
+}
+
+#footer {
+  text-align: center;
+  font-family: "Montserrat";
+  padding: 1%;
+  background-color: #0f4c75;
+  color: white;
+}
