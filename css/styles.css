@@ -8,6 +8,8 @@ body {
   color: white;
 }
 
+
+
 /* Navigation bar */
 .navbar {
   padding: 0.25rem 0 0.5rem;
@@ -32,6 +34,20 @@ body {
   font-family: "Montserrat-light";
 }
 
+.blue-white-section{
+  padding: 3%;
+  background-color: #3282b8;
+  color: white;
+  font-family: "Montserrat";
+}
+
+.white-blue-section{
+  padding: 3%;
+  background-color: white;
+  color: #3282b8;
+  font-family: "Montserrat";
+}
+
 /* Carousel */
 #title-carousel {
   text-align: center;
@@ -46,19 +62,24 @@ body {
   vertical-align: middle;
 }
 
+.carousel-image {
+  width: 35.5rem;
+  /*object-fit: cover;*/
+  border-radius: 5%;
+}
+
 #service-authorises {
   background-color: white;
-  margin: 3%;
+
   text-align: center;
 }
 
 h3 {
   font-size: 2.5rem;
-  color: #3282b8;
   text-align: center;
   font-weight: 500;
   position: relative;
-  margin-bottom: 5%;
+  margin-bottom: 2%;
 }
 
 
@@ -67,17 +88,36 @@ padding: 3%;
 }
 
 .service-logo {
-  width: 60%;
+  width: 70%;
   vertical-align: middle;
   text-align: center;
 }
 
 #appareils-marques {
-  background-color: #0f4c75;
+  background-color: #3282b8;
   color: white;
 }
 
+.apps-marques-header{
+  color: white;
+}
+
+
 #territoire {}
+
+.map-container-5{
+overflow:hidden;
+padding-bottom:56.25%;
+position:relative;
+height:0;
+}
+.map-container-5 iframe{
+left:0;
+top:0;
+height:100%;
+width:100%;
+position:absolute;
+}
 
 #contact {
   background-color: #3282b8;

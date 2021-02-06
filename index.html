@@ -16,6 +16,9 @@
   <!-- Link font awesome -->
   <script src="https://kit.fontawesome.com/8034658d4d.js" crossorigin="anonymous"></script>
 
+  <!-- Link for email -->
+  <script src= "https://smtpjs.com/v3/smtp.js"></script>
+  <script src= "js\index.js"></script>
   <!-- link css -->
   <link rel="stylesheet" href="css\styles.css">
 
@@ -37,16 +40,16 @@
         <ul class="navbar-nav ml-auto">
           <!-- <ul class="navbar-nav me-auto mb-2 mb-lg-0"> -->
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Service Authorisés</a>
+            <a class="nav-link" href="#service-authorises">Service Authorisés</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Appareils & Marques</a>
+            <a class="nav-link" href="#appareils-marques">Appareils & Marques</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Territoire</a>
+            <a class="nav-link" href="#territoire">Territoire</a>
           </li>
         </ul>
       </div>
@@ -55,20 +58,24 @@
     <!-- Title carousel-->
 
     <div id="title-carousel" class="carousel slide" data-ride="false">
+      <ol class="carousel-indicators">
+        <li data-bs-target="#title-carousel" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#title-carousel" data-bs-slide-to="1"></li>
+        <li data-bs-target="#title-carousel" data-bs-slide-to="2"></li>
+      </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-            <div class="row align-items-center justify-content-center">
-              <div class="col-md6 carousel-column">
-                <img src="images\Camion.jpg" alt="camion">
-              </div>
-              <div class="col-md6 carousel-column">
-                <h2>514-424-4138</h2>
-                <p>Service de réparation à domicile par un technicien d'expérience.</p>
-                <p>Couvre Montréal et la Rive-Nord.</p>
-                <p>Satisfaction Garantie</p>
-                <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fas fa-clock"></i> Heures de service</button>
-              </div>
+          <div class="row align-items-center justify-content-center">
+            <div class="col-md6 carousel-column">
+              <img class="carousel-image" src="images\Camion2.JPG" alt="camion">
             </div>
+            <div class="col-md6 carousel-column">
+              <h2>514-424-4138</h2>
+              <p>Service de réparation à domicile par un technicien d'expérience.</p>
+              <p>Couvre Montréal et la Rive-Nord.</p>
+              <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fas fa-clock"></i> Heures de service</button>
+            </div>
+          </div>
         </div>
         <div class="carousel-item">
           <div class="container">
@@ -96,6 +103,7 @@
             </div>
           </div>
         </div>
+
       </div>
       <a class="carousel-control-prev" href="#title-carousel" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -107,7 +115,7 @@
 
   </section>
 
-  <section id=service-authorises>
+  <section id=service-authorises class="white-blue-section">
     <div class="container">
       <div class="service-header">
         <h3>Services authorisés</h3>
@@ -115,67 +123,344 @@
       <div class="row align-items-center justify-content-center row-service-icon">
 
         <div class="col-lg-3 col-md-4 logo-col">
-            <img class="service-logo" src="images\Electrolux.png" alt="Electrolux">
+          <img class="service-logo" src="images\Electrolux.png" alt="Electrolux">
         </div>
 
         <div class="col-lg-3 col-md-4 logo-col">
-            <img class="service-logo" src="images\frigidaire.png" alt="Frigidaire">
+          <img class="service-logo" src="images\frigidaire.png" alt="Frigidaire">
         </div>
 
         <div class="col-lg-3 col-md-4 logo-col">
-            <img class="service-logo" src="images\Gibsonpng.png" alt="Gibson">
+          <img class="service-logo" src="images\Gibsonpng.png" alt="Gibson">
         </div>
 
         <div class="col-lg-3 col-md-4 logo-col">
-            <img class="service-logo" src="images\Kelvinator.png" alt="Kelvinator">
+          <img class="service-logo" src="images\Kelvinator.png" alt="Kelvinator">
         </div>
 
         <div class="col-lg-3 col-md-4 logo-col">
-            <img class="service-logo" src="images\tappan.png" alt="Tappan">
+          <img class="service-logo" src="images\tappan.png" alt="Tappan">
         </div>
 
         <div class="col-lg-3 col-md-4 logo-col">
-            <img class="service-logo" src="images\westinghouse.png" alt="Westinghouse">
+          <img class="service-logo" src="images\westinghouse.png" alt="Westinghouse">
+        </div>
+
+        <div class="col-lg-3 col-md-4 logo-col">
+          <img class="service-logo" src="images\cavavin.png" alt="cavavin">
         </div>
 
       </div>
     </div>
   </section>
 
-  <section id=appareils-marques>
-    <h3>Appareils & Marques</h3>
-    <ul>
-      <li>Broyeur</li>
-      <li>Cellier</li>
-      <li>Congélateur</li>
-      <li>Climatiseur</li>
-      <li>Déshumidificateur</li>
-      <li>Four Encastré</li>
-      <li>Hotte</li>
-      <li>Lave Vaiselle</li>
-      <li>Laveuse</li>
-      <li>Micro-onde</li>
-      <li>Plaque de cuisson</li>
-      <li>Réfrigérateur</li>
-      <li>Sécheuse</li>
-    </ul>
+  <section id=appareils-marques class="blue-white-section">
+    <h3 class="apps-marques-header">Appareils & Marques</h3>
+    <div class="container">
+    <h5>Appareils:</h5>
+    <div class="row">
+      <div class="col-md6">
+        <ul class="fa-ul">
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Broyeur</li>
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Cellier</li>
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Congélateur</li>
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Climatiseur</li>
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Déshumidificateur</li>
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Four Encastré</li>
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Hotte</li>
+        </ul>
+      </div>
+      <div class="col-md6">
+        <ul class="fa-ul">
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Lave Vaiselle</li>
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Laveuse</li>
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Micro-onde</li>
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Plaque de cuisson</li>
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Réfrigérateur</li>
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Sécheuse</li>
+        </ul>
+      </div>
+    </div>
+
+    <h5>Marques:</h5>
+    <div class="row">
+      <div class="col-lg6">
+        <ul class="fa-ul">
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Asko</li>
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Bosch</li>
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Blomberg</li>
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Brada</li>
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Danby</li>
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Electrolux</li>
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Fisher & Paykel</li>
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Frigidaire</li>
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>GE</li>
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Gibson</li>
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Haier</li>
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Hotpoint</li>
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Icon</li>
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Inglis</li>
+        </ul>
+      </div>
+      <div class="col-lg6">
+        <ul class="fa-ul">
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Jenn-Air</li>
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Kelon</li>
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Kelvinator</li>
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Kitchenaid</li>
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>LG</li>
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Maytag</li>
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Mc Clary</li>
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Roper</li>
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Samsung</li>
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Simplicity</li>
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Tappan</li>
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Thermador</li>
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Whirlpool</li>
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Westhinghouse</li>
+        </ul>
+      </div>
+    </div>
+  </div>
   </section>
 
-  <section id=territoire>
+  <section id=territoire class="white-blue-section">
     <h3>Territoire</h3>
+    <div class="row">
+
+    <!--Grid column-->
+    <div class="col-md-6 mb-4">
+
+    <!--Card-->
+    <div class="card card-cascade narrower">
+
+
+
+      <!--Card content-->
+      <div class="card-body card-body-cascade text-center">
+
+        <!--Google map-->
+        <div id="map-container-google-8" class="z-depth-1-half map-container-5" style="height: 300px">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83097.5000071946!2d-73.88390057486507!3d45.60607008128128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc9256d49809e6d%3A0x320d338779b2f774!2sDeux-Montagnes%2C%20QC!5e0!3m2!1sen!2sca!4v1612629289552!5m2!1sen!2sca"
+            frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+
+      </div>
+      <!--/.Card content-->
+
+    </div>
+    <!--/.Card-->
+
+  </div>
+  <!--Grid column-->
+
+  <!--Grid column-->
+  <div class="col-md-6 mb-4">
+    <h5>Laval:</h5>
+    <div class="row">
+      <div class="col-md6">
+        <ul class="fa-ul">
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Laval</li>
+        </ul>
+      </div>
+      <div class="col-md6">
+        <ul class="fa-ul">
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Île Jésus</li>
+        </ul>
+      </div>
+    </div>
+
+    <h5>Montréal:</h5>
+    <div class="row">
+      <div class="col-md6">
+        <ul class="fa-ul">
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Ahuntsic</li>
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>St-Laurent</li>
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Saint-Léonard</li>
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Pierrefonds</li>
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Ste-Geneviève</li>
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Dollard des ormeaux</li>
+        </ul>
+      </div>
+      <div class="col-md6">
+        <ul class="fa-ul">
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Cartierville</li>
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Roxboro</li>
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Montréal Nord</li>
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Villeray</li>
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Île Bizard</li>
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Pointe-Claire</li>
+        </ul>
+      </div>
+    </div>
+
+    <h5>Rive-Nord:</h5>
+    <div class="row">
+      <div class="col-md6">
+        <ul class="fa-ul">
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Prévost</li>
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Bois des fillions</li>
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Rosemère</li>
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Ste-Thérèse</li>
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>St-Eustache</li>
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Ste-Marthe sur le Lac</li>
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Pointe Calumet</li>
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Ste-Anne des plaines</li>
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Ste-Sophie</li>
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>St-Hippolyte</li>
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Pointe-aux-Anglais</li>
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Ste-Anne-des-Lacs</li>
+        </ul>
+      </div>
+      <div class="col-md6">
+        <ul class="fa-ul">
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Terrebonne</li>
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Lorraine</li>
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Blainville</li>
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Boisbriand</li>
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Deux-Montagnes</li>
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Saint-Joseph de Lac</li>
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Oka</li>
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>St-Colomban</li>
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>La Plaine</li>
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Mascouche</li>
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Mirabel</li>
+          <li><span class="fa-li"><i class="fas fa-angle-right"></i></span>Lachenaie</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+  <!--Grid column-->
+
+</div>
+<!--Grid row-->
   </section>
 
-  <section id=contact>
+  <section id=contact class="blue-white-section">
     <h3>Contactez-nous</h3>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="images\techperson_head.jpg" alt="Techperson">
+        </div>
+        <div class="col-md-6">
+          <form>
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title"><i class="fas fa-clock"></i> Heures de Service</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="card-link">Phone</a>
+                <a href="#" class="card-link">Email</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+          <div class="well well-sm">
+            <form>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="name">
+                      Nom</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter name" required="required">
+                  </div>
+                  <div class="form-group">
+                    <label for="email">
+                      Email Address</label>
+                    <div class="input-group">
+                      <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+                      </span>
+                      <input type="email" class="form-control" id="email" placeholder="Enter email" required="required">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="Appareil">
+                      Appareil</label>
+                    <select id="Appareil" name="subject" class="form-control" required="required">
+                      <option value="na" selected="">Choose One:</option>
+                      <option value="Broyeur">Broyeur</option>
+                      <option value="Cellier">Cellier</option>
+                      <option value="Congélateur">Congélateur</option>
+                      <option value="Climatiseur">Climatiseur</option>
+                      <option value="Déshumidificateur">Déshumidificateur</option>
+                      <option value="Four Encastré">Four Encastré</option>
+                      <option value="Hotte">Hotte</option>
+                      <option value="Lave Vaiselle">Lave Vaiselle</option>
+                      <option value="Laveuse">Laveuse</option>
+                      <option value="Micro-onde">Micro-onde</option>
+                      <option value="Plaque de cuisson">Plaque de cuisson</option>
+                      <option value="Réfrigérateur">Réfrigérateur</option>
+                      <option value="Sécheuse">Sécheuse</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="Marque">
+                      Marque</label>
+                    <select id="Marque" name="subject" class="form-control" required="required">
+                      <option value="na" selected="">Choose One:</option>
+                      <option value="Asko">Asko</option>
+                      <option value="Bosch">Bosch</option>
+                      <option value="Brada">Brada</option>
+                      <option value="Danby">Danby</option>
+                      <option value="Electrolux">Electrolux</option>
+                      <option value="Fisher & Paykel">Fisher & Paykel</option>
+                      <option value="Frigidaire">Frigidaire</option>
+                      <option value="GE">GE</option>
+                      <option value="Gibson">Gibson</option>
+                      <option value="Haier">Haier</option>
+                      <option value="Hotpoint">Hotpoint</option>
+                      <option value="Icon">Icon</option>
+                      <option value="Inglis">Inglis</option>
+                      <option value="Jenn-Air">Jenn-Air</option>
+                      <option value="Kelon">Kelon</option>
+                      <option value="Kelvinator">Kelvinator</option>
+                      <option value="Kitchenaid">Kitchenaid</option>
+                      <option value="LG">LG</option>
+                      <option value="Maytag">Maytag</option>
+                      <option value="Mc Clary">Mc Clary</option>
+                      <option value="Roper">Roper</option>
+                      <option value="Samsung">Samsung</option>
+                      <option value="Simplicity">Simplicity</option>
+                      <option value="Tappan">Tappan</option>
+                      <option value="Thermador">Thermador</option>
+                      <option value="Whirlpool">Whirlpool</option>
+                      <option value="Westhinghouse">Westhinghouse</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="name">
+                      Message</label>
+                    <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required" placeholder="Message"></textarea>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <button type="submit" class="btn btn-primary pull-right" id="btnContactUs" onclick="sendEmail();">
+                    Send Message</button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+      </div>
+    </div>
   </section>
 
   <footer id="footer">
 
-      <i class="fab fa-twitter footer-icon"></i>
-      <i class="fab fa-facebook-f footer-icon"></i>
-      <i class="fab fa-instagram footer-icon"></i>
-      <i class="fas fa-envelope footer-icon"></i>
-      <p>© Copyright 2021</p>
+    <i class="fab fa-twitter footer-icon"></i>
+    <i class="fab fa-facebook-f footer-icon"></i>
+    <i class="fab fa-instagram footer-icon"></i>
+    <i class="fas fa-envelope footer-icon"></i>
+    <p>© Copyright 2021</p>
 
   </footer>
 

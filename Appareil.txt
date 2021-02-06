@@ -1,0 +1,13 @@
+Broyeur
+Cellier
+Congélateur
+Climatiseur
+Déshumidificateur
+Four Encastré
+Hotte
+Lave Vaiselle
+Laveuse
+Micro-onde
+Plaque de cuisson
+Réfrigérateur
+Sécheuse
